@@ -1,0 +1,29 @@
+host: 0.0.0.0
+port: 8002
+logLevel: Debug
+tokenHouseHost: http://127.0.0.1:8888
+topic:
+  valid:
+    - auction.auctionInfo
+    - ctc.$market.kline.$period
+    - ctc.$market.order
+    - ctc.$market.trade
+    - ctc.$market.depth
+    - ctc.$market.ticker
+    - otc
+  dict:
+    market:
+      - siesusd
+      - hoteth
+    period:
+      - 1
+      - 5
+      - 15
+      - 30
+      - 60
+      - 240
+      - 1440
+      - 10080
+
+
+
